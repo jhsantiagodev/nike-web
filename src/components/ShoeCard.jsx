@@ -3,6 +3,7 @@ import React from "react";
 export const ShoeCard = ({ imgUrl, changeImage, bigShoeImg }) => {
   const handleClick = () => {
     if (bigShoeImg !== imgUrl.bigShoe) {
+      //Cambiar el estado de la imagen
       changeImage(imgUrl.bigShoe);
     }
   };
@@ -16,7 +17,7 @@ export const ShoeCard = ({ imgUrl, changeImage, bigShoeImg }) => {
       } cursor-pointer max-sm:flex-1`}
       onClick={handleClick}
     >
-      <div className=" flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
+      <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
         <img
           src={imgUrl.thumbnail}
           alt="shoe collection"
