@@ -56,7 +56,7 @@ export const Hero = () => {
         <div className="flex sm:gap-16 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
           {/*Variable que contiene las imagenes en constants */}
           {shoes.map((shoe) => (
-            <div key={shoe}>
+            <div key={shoe.id}>
               <ShoeCard
                 imgUrl={shoe}
                 changeImage={(shoe) => setBigShoeImg(shoe)}

@@ -1,6 +1,13 @@
 import React from "react";
 
-export const Button = ({ label, iconUrl, bgColor, borderColor, textColor }) => {
+export const Button = ({
+  label,
+  iconUrl,
+  bgColor,
+  borderColor,
+  textColor,
+  fullWidth,
+}) => {
   return (
     <button
       className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
@@ -8,7 +15,7 @@ export const Button = ({ label, iconUrl, bgColor, borderColor, textColor }) => {
               bgColor
                 ? `${bgColor} ${textColor} ${borderColor}`
                 : "bg-coral-red text-white border-coral-red"
-            } rounded-full w-full"}
+            } rounded-full ${fullWidth && "w-full"}"}
     `}
     >
       {label}

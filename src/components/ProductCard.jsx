@@ -15,7 +15,7 @@ export const ProductCard = ({ imgURL, price, name, stat }) => {
       <h3 className="mt-2 text-xl leading-normal font-semibold font-palanquin">
         {name}
       </h3>
-      <p className=" mt-2 font-montserrat font-semibold text-coral-red text-xl leading-normal">
+      <p className="mt-2 font-montserrat font-semibold text-coral-red text-xl leading-normal">
         {price}
       </p>
     </div>
